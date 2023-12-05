@@ -7,5 +7,7 @@ parserOptions:
   sourceType: module
 rules:
   no-console: 0
-  import/extentions:
-        - js: always
+  import/extensions:
+    - error
+    - ignorePackages
+    - js: always
