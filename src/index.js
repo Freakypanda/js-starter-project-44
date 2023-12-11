@@ -17,5 +17,5 @@ export default (gameName, rules) => {
     }
     count += 1;
   }
-  console.log(`Gongratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
