@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 export const rules = 'What is the result of the expression?';
 export const brainCalc = () => {
-  const operators = ['+', '-', 'x'];
+  const operators = ['+', '-', '*'];
   const index = _.random(0, 2, false);
   const num1 = _.random(1, 20, false);
   const num2 = _.random(1, 20, false);
@@ -11,6 +11,6 @@ export const brainCalc = () => {
   let answer;
   if (operators[index] === '+') answer = num1 + num2;
   else if (operators[index] === '-') answer = num1 - num2;
-  else if (operators[index] === 'x') answer = num1 * num2;
+  else if (operators[index] === '*') answer = num1 * num2;
   return [expression, answer.toString()];
 };
