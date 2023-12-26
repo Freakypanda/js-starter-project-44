@@ -2,7 +2,7 @@
 import _ from 'lodash';
 
 export const rules = 'Find the greatest common divisor of given numbers.';
-export const brainGcd = () => {
+export const getBrainGcdTask = () => {
   let num1 = _.random(1, 20, false);
   let num2 = _.random(1, 20, false);
   const question = `${num1} ${num2}`;

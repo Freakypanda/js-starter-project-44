@@ -2,7 +2,7 @@
 import _ from 'lodash';
 
 export const rules = 'What is the result of the expression?';
-export const brainCalc = () => {
+export const getBrainCalcTask = () => {
   const operators = ['+', '-', '*'];
   const index = _.random(0, 2, false);
   const num1 = _.random(1, 20, false);

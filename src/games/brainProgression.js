@@ -2,7 +2,7 @@
 import _ from 'lodash';
 
 export const rules = 'What number is missing in the progression?';
-export const brainProgression = () => {
+export const getBrainProgressionTask = () => {
   let number = _.random(1, 100, false);
   const diff = _.random(1, 10, false);
   const index = _.random(0, 9, false);
