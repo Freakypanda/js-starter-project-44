@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { getBrainPrimeTask, rules } from '../src/games/brainPrime.js';
-import game from '../src/index.js';
+import startBrainPrimeGame from '../src/games/brainPrime.js';
 
-game(getBrainPrimeTask, rules);
+startBrainPrimeGame();

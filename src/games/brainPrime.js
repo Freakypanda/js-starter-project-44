@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import _ from 'lodash';
+import game from '../index.js';
 
 export const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 export const getBrainPrimeTask = () => {
@@ -9,4 +10,8 @@ export const getBrainPrimeTask = () => {
   if (primes.includes(question)) answer = 'yes';
   else answer = 'no';
   return [question, answer];
+};
+
+export default () => {
+  game(getBrainPrimeTask, rules);
 };

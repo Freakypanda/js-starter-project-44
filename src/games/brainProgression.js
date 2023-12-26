@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import _ from 'lodash';
+import game from '../index.js';
 
 export const rules = 'What number is missing in the progression?';
 export const getBrainProgressionTask = () => {
@@ -15,4 +16,8 @@ export const getBrainProgressionTask = () => {
   progression[index] = '..';
   const question = progression.join(' ');
   return [question, answer];
+};
+
+export default () => {
+  game(getBrainProgressionTask, rules);
 };

@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import _ from 'lodash';
+import game from '../index.js';
 
 export const rules = 'Find the greatest common divisor of given numbers.';
 export const getBrainGcdTask = () => {
@@ -15,4 +16,8 @@ export const getBrainGcdTask = () => {
     num1 = remainder;
   }
   return [question, answer.toString()];
+};
+
+export default () => {
+  game(getBrainGcdTask, rules);
 };

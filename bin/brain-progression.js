@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { getBrainProgressionTask, rules } from '../src/games/brainProgression.js';
-import game from '../src/index.js';
+import startBrainProgressionGame from '../src/games/brainProgression.js';
 
-game(getBrainProgressionTask, rules);
+startBrainProgressionGame();
